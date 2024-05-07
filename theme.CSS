@@ -1,0 +1,87 @@
+:root {
+	/* CUSTOM VARIABLES */
+	--black: #000000;
+	--black-rgb: 0, 0, 0;
+	
+	--dark-grey: #0A0A0A;
+	--dark-grey-rgb: 10, 10, 10;
+	
+	--bright-green: #00FF00;
+	--bright-green-rgb: 0, 255, 0;
+	
+	--mild-green: #007D00;
+	--mild-green-rgb: 0, 125, 0;
+	
+	--testing: #FF00C8;
+	--testing-rgb: 255, 0, 200;
+	
+	--main-font: Fira Code;
+	
+	/* FONT */
+	--default-font: var(--main-font);
+	--font-monospace: var(--main-font);
+	
+	/* TEXT */
+	--line-height-normal: 1;
+
+	/* WINDOW RESIZE HANDLE */
+	.workspace-leaf-resize-handle {
+		border-color: #00FF00;
+	}
+
+	/* TAB HEADERS */
+	.workspace-tab-header-container {
+		border-bottom: var(--tab-outline-width) solid #00FF00;
+	}
+
+	.workspace-tab-header {
+		position: inherit;
+	}
+
+	.workspace-tab-header.is-active {
+		box-shadow: 0 0 0 var(--tab-outline-width) #00FF00;
+	}
+}
+
+.theme-dark,
+.theme-light {
+	/* BACKGROUND */
+	--background-primary: var(--black);
+	--background-primary-alt: var(--black);
+	--background-secondary: var(--black);
+	--background-secondary-alt: var(--black);
+	--code-background: var(--dark-grey);
+	
+	/* GRAPH */
+	--graph-node-focused: var(--bright-green);
+
+	/* TEXT */
+	--text-normal: #00FF00;
+}
+
+/*========
+= HIDDEN =
+========*/
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+	display: none;
+}
+
+/* PREVIOUS/NEXT BUTTONS */
+div.view-header-nav-buttons {
+	display: none;
+}
+
+/* VIEW ACTION BUTTONS */
+div.view-actions,
+a.clickable-icon.view-action {
+	display: none;
+}
+
+/* GRAPH CONTOL BUTTONS */
+div.graph-controls,
+div.clickable-icon.graph-controls-button.mod-open,
+div.clickable-icon.graph-controls-button.mod-animate {
+	display: none;
+}
