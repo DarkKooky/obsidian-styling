@@ -8,6 +8,7 @@
 	--white: rgb(255, 255, 255);
 
 	--green-255: rgb(0, 255, 0);
+	--green-255-a25: rgba(0, 255, 0, 0.25);
 	--green-200: rgb(0, 200, 0);
 	--green-150: rgb(0, 150, 0);
 	--green-100: rgb(0, 100, 0);
@@ -20,19 +21,14 @@
 	/* Fonts */
 	--default-font: var(--main-font);
 	--font-monospace: var(--main-font);
-
-	/* Line */
-	--line-height-normal: 1;
 }
 
-.theme-dark,
-.theme-light {
+.theme-dark {
 	/* Background */
 	--background-primary: var(--black);
 	--background-primary-alt: var(--black);
 	--background-secondary: var(--black);
 	--background-secondary-alt: var(--black);
-	--text-highlight-bg: var(--green-50);
 
 	/* Dividers */
 	--divider-color: var(--green-50);
@@ -41,11 +37,7 @@
 	--divider-width-hover: 4px;
 
 	/* Graph */
-	--graph-line: var(--green-50);
-	--graph-node: var(--grey-150);
-	--graph-node-attachment: var(--green-50);
-	--graph-node-focused: var(--green-255);
-	--graph-node-unresolved: var(--grey-50);
+	--graph-line: var(--green-150);
 
 	/* Metadata Tags */
 	--tag-background: var(--green-50);
@@ -56,6 +48,14 @@
 	/* Text */
 	--text-accent: var(--green-200);
 	--text-accent-hover: var(--green-255);
+	--text-selection: var(--green-255-a25);
+}
+
+/* Highlights */
+.markdown-rendered mark,
+.cm-s-obsidian span.cm-highlight {
+	background-color: var(--green-50);
+	color: var(--white);
 }
 
 /*========
