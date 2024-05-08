@@ -1,124 +1,99 @@
-/*==================
-= CUSTOM VARIABLES =
-==================*/
-
-/* Colours */
 :root {
-	--black: #000000;
-	--dark-grey: #0a0a0a;	
-	--bright-green: #00FF00;
-	--mild-green: #009900;
+	/* Custom Variables */
+	--black: rgb(0, 0, 0);
+	--grey-50: rgb(50, 50, 50);
+	--grey-100: rgb(100, 100, 100);
+	--grey-150: rgb(150, 150, 150);
+	--grey-200: rgb(200, 2200, 200);
+	--white: rgb(255, 255, 255);
+
+	--green-255: rgb(0, 255, 0);
+	--green-200: rgb(0, 200, 0);
+	--green-150: rgb(0, 150, 0);
+	--green-100: rgb(0, 100, 0);
+	--green-50: rgb(0, 50, 0);
+
 	--testing: #FF00C8;
-}
 
-/* Fonts */
-:root {
 	--main-font: Fira Code;
+
+	/* Fonts */
+	--default-font: var(--main-font);
+	--font-monospace: var(--main-font);
+
+	/* Line */
+	--line-height-normal: 1;
 }
 
-/*===========
-= WORKSPACE =
-===========*/
-
-/* Background Colours */
 .theme-dark,
 .theme-light {
+	/* Background */
 	--background-primary: var(--black);
 	--background-primary-alt: var(--black);
 	--background-secondary: var(--black);
 	--background-secondary-alt: var(--black);
-	--code-background: var(--dark-grey);
+	--text-highlight-bg: var(--green-50);
+
+	/* Dividers */
+	--divider-color: var(--green-50);
+	--divider-color-hover: var(--green-100);
+	--divider-width: 2px;
+	--divider-width-hover: 4px;
+
+	/* Graph */
+	--graph-line: var(--green-50);
+	--graph-node: var(--grey-150);
+	--graph-node-attachment: var(--green-50);
+	--graph-node-focused: var(--green-255);
+	--graph-node-unresolved: var(--grey-50);
+
+	/* Metadata Tags */
+	--tag-background: var(--green-50);
+	--tag-background-hover: var(--green-100);
+	--tag-color: var(--white);
+	--tag-color-hover: var(--white);
+
+	/* Text */
+	--text-accent: var(--green-200);
+	--text-accent-hover: var(--green-255);
 }
+
+/*========
+= HIDDEN =
+========*/
 
 /* Backlink Status Bar */
-div.status-bar {
-	display: none;
-}
+div.status-bar,
 
-/* Fonts */
-:root {
-	--default-font: var(--main-font);
-	--font-monospace: var(--main-font);
-}
+/* Directory Tree Buttons */
+div.nav-header,
 
-/* Resize Handle */
-hr.workspace-leaf-resize-handle {
-	border-color: var(--mild-green);
-}
+/* Directory Tree Vault Name */
+div.tree-item.nav-folder.mod-root > div.tree-item-self.nav-folder-title > div.tree-item-inner.nav-folder-title-content,
+
+/* Graph Control Buttonss */
+div.graph-controls,
+div.clickable-icon.graph-controls-button.mod-open,
+div.clickable-icon.graph-controls-button.mod-animate,
+
+/* Previous & Next Buttons */
+div.view-header-nav-buttons,
+
 /* Ribbon */
-div.workspace-ribbon {
-	display: none;
-}
+div.workspace-ribbon,
+
+/* Scrollbars */
+::-webkit-scrollbar,
+
+/* Tab Headers */
+div.workspace-tab-header-container,
 
 /* Titlebar */
 div.titlebar-inner,
-div.workspace-tab-header-container {
-	display: none;
-}
-
-/*================
-= DIRECTORY TREE =
-================*/
-
-/* New Note/Folder, Sort Order & Collapse/Exapnd Buttons */
-div.workspace-leaf-content > div.nav-header {
-	display: none;
-}
-
-/* Vault Name */
-div.tree-item.nav-folder.mod-root > div.tree-item-self.nav-folder-title {
-	display: none;
-}
-
-/*=====
-= TAB =
-=====*/
-
-/* Graph Nodes */
-.theme-dark,
-.theme-light {
-	--graph-node-focused: var(--bright-green);
-}
-
-/* Graph Control Buttons */
-div.graph-controls,
-div.clickable-icon.graph-controls-button.mod-open,
-div.clickable-icon.graph-controls-button.mod-animate {
-	display: none;
-}
-
-/* Lines */
-:root {
-	--line-height-normal: 1;
-}
-
-/* Previous/Next Buttons */
-div.view-header-nav-buttons {
-	display: none;
-}
-
-/* Properties */
-div.metadata-properties-heading {
-	display: none;
-}
-
-/* Scrollbars */
-::-webkit-scrollbar {
-	display: none;
-}
-
-/* Title */
-div.view-header-title,
-div.view-header-title-parent {
-	color: var(--mild-green);
-}
-
-.is-focused .workspace-leaf.mod-active .view-header-title {
-    color: var(--bright-green);
-}
 
 /* View Action Buttons */
 div.view-actions,
-a.clickable-icon.view-action {
+a.clickable-icon.view-action,
+div.view-header-title-container.mod-at-start.mod-fade::after {
 	display: none;
 }
