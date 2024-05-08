@@ -1,0 +1,99 @@
+:root {
+	/* Custom Variables */
+	--black: rgb(0, 0, 0);
+	--grey-50: rgb(50, 50, 50);
+	--grey-100: rgb(100, 100, 100);
+	--grey-150: rgb(150, 150, 150);
+	--grey-200: rgb(200, 2200, 200);
+	--white: rgb(255, 255, 255);
+
+	--green-255: rgb(0, 255, 0);
+	--green-255-a25: rgba(0, 255, 0, 0.25);
+	--green-200: rgb(0, 200, 0);
+	--green-150: rgb(0, 150, 0);
+	--green-100: rgb(0, 100, 0);
+	--green-50: rgb(0, 50, 0);
+
+	--testing: #FF00C8;
+
+	--main-font: Fira Code;
+
+	/* Fonts */
+	--default-font: var(--main-font);
+	--font-monospace: var(--main-font);
+}
+
+.theme-dark {
+	/* Background */
+	--background-primary: var(--black);
+	--background-primary-alt: var(--black);
+	--background-secondary: var(--black);
+	--background-secondary-alt: var(--black);
+
+	/* Dividers */
+	--divider-color: var(--green-50);
+	--divider-color-hover: var(--green-100);
+	--divider-width: 2px;
+	--divider-width-hover: 4px;
+
+	/* Graph */
+	--graph-line: var(--green-150);
+
+	/* Metadata Tags */
+	--tag-background: var(--green-50);
+	--tag-background-hover: var(--green-100);
+	--tag-color: var(--white);
+	--tag-color-hover: var(--white);
+
+	/* Text */
+	--text-accent: var(--green-200);
+	--text-accent-hover: var(--green-255);
+	--text-selection: var(--green-255-a25);
+}
+
+/* Highlights */
+.markdown-rendered mark,
+.cm-s-obsidian span.cm-highlight {
+	background-color: var(--green-50);
+	color: var(--white);
+}
+
+/*========
+= HIDDEN =
+========*/
+
+/* Backlink Status Bar */
+div.status-bar,
+
+/* Directory Tree Buttons */
+div.nav-header,
+
+/* Directory Tree Vault Name */
+div.tree-item.nav-folder.mod-root > div.tree-item-self.nav-folder-title > div.tree-item-inner.nav-folder-title-content,
+
+/* Graph Control Buttonss */
+div.graph-controls,
+div.clickable-icon.graph-controls-button.mod-open,
+div.clickable-icon.graph-controls-button.mod-animate,
+
+/* Previous & Next Buttons */
+div.view-header-nav-buttons,
+
+/* Ribbon */
+div.workspace-ribbon,
+
+/* Scrollbars */
+::-webkit-scrollbar,
+
+/* Tab Headers */
+div.workspace-tab-header-container,
+
+/* Titlebar */
+div.titlebar-inner,
+
+/* View Action Buttons */
+div.view-actions,
+a.clickable-icon.view-action,
+div.view-header-title-container.mod-at-start.mod-fade::after {
+	display: none;
+}
