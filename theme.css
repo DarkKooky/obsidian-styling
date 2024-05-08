@@ -24,6 +24,17 @@
 	--background-secondary: var(--black);
 	--background-secondary-alt: var(--black);
 
+	/* Callout */
+	--callout-padding: var(--size-4-2) var(--size-4-2) var(--size-4-2) var(--size-4-2);
+
+	/* Directory Tree */
+	--nav-item-padding: 0 0 0 var(--size-4-2);
+	--nav-item-color: var(--green-150);
+	--nav-item-color-hover: var(--white);
+	--nav-item-background-hover: var(--green-50);
+	--nav-item-color-active: var(--white);
+	--nav-item-background-active: var(--green-100);
+
 	/* Dividers */
 	--divider-color: var(--green-50);
 	--divider-color-hover: var(--green-100);
@@ -33,11 +44,14 @@
 	/* Graph */
 	--graph-line: var(--green-150);
 
-	/* Metadata Tags */
+	/* Margins */
+	--file-margins: var(--size-4-2);
+
+	/* Metadata */
 	--tag-background: var(--green-50);
 	--tag-background-hover: var(--green-100);
 	--tag-color: var(--white);
-	--tag-color-hover: var(--white);
+	--tag-color-hover: var(--white);	
 
 	/* Text */
 	--text-accent: var(--green-200);
