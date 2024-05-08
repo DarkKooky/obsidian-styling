@@ -107,6 +107,16 @@ div.metadata-properties-heading {
 	display: none;
 }
 
+/* Title */
+div.view-header-title,
+div.view-header-title-parent {
+	color: var(--mild-green);
+}
+
+.is-focused .workspace-leaf.mod-active .view-header-title {
+    color: var(--bright-green);
+}
+
 /* View Action Buttons */
 div.view-actions,
 a.clickable-icon.view-action {
