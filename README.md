@@ -1,6 +1,8 @@
 A work in progress theme that aims to resemble the Nano text editor. It is intended to be minimalistic and exclusive to dark mode: for the gremlins and other basement dwellers.
 # Current Visualisation
 ![Visualisation](https://github.com/DarkKooky/obsidian-styling/blob/main/Example.png)
+# Font
+The font styling was left untouched in order for users to select what best suits them. I do, however, suggest using a monopace font.
 # Graph
 As I've only implemented colouring for edges, the `Graph` is best used with the parameters found in [graph.json](https://github.com/DarkKooky/obsidian-styling/blob/main/graph.json).
 # How To Use

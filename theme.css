@@ -15,12 +15,6 @@
 	--green-50: rgb(0, 50, 0);
 
 	--testing: #FF00C8;
-
-	--main-font: Fira Code;
-
-	/* Fonts */
-	--default-font: var(--main-font);
-	--font-monospace: var(--main-font);
 }
 
 .theme-dark {
