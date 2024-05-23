@@ -1,4 +1,4 @@
-A work in progress theme that aims to resemble the Nano text editor. It is intended to be minimalistic and exclusive to dark mode: for the gremlins and other basement dwellers.
+A work in progress css snippet that aims to resemble the Nano text editor and the Linux terminal. It is intended to be minimalistic and exclusive to dark mode: for gremlins and other basement dwellers.
 # Current Visualisation
 ![Visualisation](https://github.com/DarkKooky/obsidian-styling/blob/main/Example.png)
 # How To Use
