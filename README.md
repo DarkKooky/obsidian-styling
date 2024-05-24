@@ -17,7 +17,7 @@ The font styling was left untouched in order for users to select what best suits
 
 ### Keyboard-Only
 This theme has been optimised for hotkey-use only and thus the Quick Switcher
-![Example](https://github.com/DarkKooky/obsidian-styling/blob/main/img/Example Quick Switcher.png)
+![Example](https://github.com/DarkKooky/obsidian-styling/blob/main/img/Example%20Quick%20Switcher.png)
 
 and the Command Palette have been tweaked:
-![Example](https://github.com/DarkKooky/obsidian-styling/blob/main/img/Example Command Palette.png)
+![Example](https://github.com/DarkKooky/obsidian-styling/blob/main/img/Example%20Command%20Palette.png)
