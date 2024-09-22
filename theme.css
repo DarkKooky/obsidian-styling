@@ -1,260 +1,210 @@
-/*==========================
-===== CUSTOM VARIABLES =====
-==========================*/
-:root {
-	/* Colours */
-	--black: rgb(0, 0, 0);
-	--white: rgb(255, 255, 255);
-	
-	--green-150: rgb(0, 150, 0); /* General */
-	--green-200: rgb(0, 200, 0); /* Hover */
-	--green-250: rgb(0, 250, 0); /* Active */
-
-	--transparent: rgba(0, 0, 0, 0%);
-
-	--testing: #FF00C8;
-}
-
-/*====================
-===== BACKGROUND =====
-====================*/
-body {
-	--background-primary: var(--black);
-	--background-primary-alt: var(--black);
-	--background-secondary: var(--black);
-	--background-secondary-alt: var(--black);
-}
-
-/*====================
-===== BLOCKQUOTE =====
-====================*/
-body {
-	--blockquote-font-style: italic;
-	--blockquote-border-color: var(--green-150);
-}
-
-/* Text inside the blockquote */
-.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote {
-	font-weight: bold;
-	font-style: italic;
-}
-
-/*================
-===== CANVAS =====
-================*/
-body,
-body.theme-dark {
-	--canvas-card-label-color: var(--green-150);
-	--canvas-dot-pattern: var(--green-150);
-	--canvas-color: 0, 150, 0;
-}
-
-/* Hovered card */
-.canvas-node-interaction-layer {
-	z-index: 0;
-}
-
-/* Focused card */
-.canvas-node.is-focused .canvas-node-container {
-	border-color: var(--green-250);
-	box-shadow: none;
-}
-
-/* Focused/Hovered card label */
-.canvas-node-label:hover,
-.canvas-node.is-focused .canvas-node-label {
-	color: var(--green-250);
-}
-
-/* Card */
-div.canvas-node-container {
-	border: 1px solid var(--green-150);
-	border-radius: 0%;
-}
-
-/* Right side buttons */
-div.canvas-control-group {
-	border-radius: 0%;
-	border: 1px solid var(--green-150);
-}
-
-div.canvas-control-item {
-	background-color: var(--black);
-	color: var(--green-150);
-	border-bottom: 1px solid var(--green-150);
-}
-
-div.canvas-control-item:hover {
-	background-color: var(--green-150);
-	color: var(--black);
-}
-
-div.canvas-control-item.is-disabled svg {
-	color: var(--green-150);
-}
-
-div.canvas-control-item.is-disabled:hover svg {
-	color: var(--black);
-}
-
-/* Settings menu */
-div.menu {
-	border: 1px solid var(--green-150);
-	border-radius: 0%;
-	padding: 0;
-}
-
-div.menu-item {
-	border-radius: 0%;
-}
-
-div.menu-item-icon,
-div.menu-item-title {
-	color: var(--green-150);
-}
-
-.menu-item.selected:not(.is-label):not(.is-disabled) {
-	background-color: var(--green-150);
-}
-
-div.menu-item.selected > div.menu-item-icon,
-div.menu-item.selected > div.menu-item-title {
-	color: var(--black);
-}
-
-/* Help modal */
-div.modal.mod-canvas-help {
-	border-radius: 0%;
-	width: 700px;
-}
-
-span.setting-hotkey {
-	background-color: var(--green-150);
-	color: var(--black);
-	font-weight: bold;
-}
-
-/* Popup menu buttons */
-div.canvas-card-menu {
-	border-radius: 0%;
-}
-
-div.canvas-card-menu-button {
-	border: 1px solid var(--green-150);
-	color: var(--green-150);
-}
-
-div.canvas-menu {
-	border: 1px solid var(--green-150);
-	border-radius: 0%;
-	padding: 0;
-	gap: 0;
-}
-
-/* Bottom buttons */
-div.canvas-menu > button.clickable-icon {
-	border-radius: 0%;
-	color: var(--green-150);
-	border: 1px solid var(--green-150);
-}
-
-div.canvas-menu > button.clickable-icon:hover {
-	background-color: var(--green-150);
-	color: var(--black);
-}
-
 /*==================
-===== CHECKBOX =====
+= CUSTOM VARIABLES =
 ==================*/
-body {
-	/* Unchecked */
-	--checkbox-border-color: var(--green-150);
-	--checkbox-border-color-hover: var(--green-150);
+:root {
+	--compressed-red: rgb(150, 0, 0);
+	--device-yellow: rgb(200, 200, 0);
+	--directory-blue: rgb(0, 130, 255);
+	--generic-white: rgb(200, 200, 200);
+	--hidden-grey: rgb(100, 100, 100);
+	--interface-green: rgb(0, 150, 0);
+	--multimedia-magenta: rgb(150, 0, 150);
+	--symlink-cyan: rgb(0, 255, 255);
 
-	/* Checked */
-	--checkbox-color: var(--green-150);
-	--checkbox-color-hover: var(--green-150);
-	--checklist-done-decoration: line-through 2px var(--green-150);
-	--checkbox-marker-color: var(--black);
+	--testing: rgb(255, 0, 255);
 }
 
-/*==============
-===== FONT =====
-==============*/
-body {
-	font-size: 14px;
-}
-
-/*===============
-===== MODAL =====
-===============*/
-body {
-	--modal-background: var(--black);
-	--modal-border-color: var(--green-150);
-}
-
-/* Remove opacity when modal comes into focus */
-.modal-bg {
-	background-color: var(--transparent);
-}
-
-/*====================
-===== NAVIGATION =====
-====================*/
-body {
-	--nav-item-color: var(--green-150);
-	--nav-collapse-icon-color: var(--green-150);
-
-	/* Hovered */
-	--nav-item-color-hover: var(--black);
-	--nav-item-background-hover: var(--green-150);
-	--nav-item-weight-hover: bold;
+/*============
+= BACKGROUND =
+============*/
+body, .theme-dark {
+	/* 
+	- Note
+	- Settings right panel
+	*/
+	--background-primary: black;
 	
-	/* Active */
-	--nav-item-color-active: var(--black);
-	--nav-item-background-active: var(--green-150);
-	--nav-item-weight-active: bold;
+	/*
+	- Navigation
+	- Graph
+	- Settings left panel
+	- Sidebar
+	*/
+	--background-secondary: black;
+	
+	/*
+	- Metadata add property button
+	- Metadata hovered property
+	- Navigation item extension
+	- Navigation active/hovered item
+	- Sidebar hovered item
+	- Settings hovered item
+	*/
+	--background-modifier-hover: black;
+	
+	/*
+	- Divider
+	- Horizontal line
+	- Metadata property border
+	- Navigation menu item separator
+	- Table border
+	--background-modifier-border: var(--interface-green);
+	*/
 
-	--nav-item-padding: 0 0 0 24px;
-	--nav-indentation-guide-color: var(--green-150);
+	/*
+	- Navigation note selector
+	--background-modifier-border-focus: var(--interface-green);
+	*/
+	
+	/*
+	- Delete file modal delete button
+	- Settingss account log out
+	- Settings hotkey conflicts
+	--background-modifier-error: var(--red-100);
+	--background-modifier-error-hover: var(--red-100);
+	*/
+	
+	/*
+	- Form
+	--background-modifier-form-field: black;
+	*/
 }
 
+/* Inline code fills the whole table cell */
+.table-cell-wrapper:has(code:only-child) {
+	background-color: var(--background-primary-alt);
+}
+
+/*=========
+= BORDERS =
+=========*/
+body, .theme-dark {
+	--border-width: 2px;
+	--button-radius: 0;
+	--file-margins: 15px;
+	--input-radius: 0;
+	--metadata-property-radius: 0;
+	--radius-s: 0;
+	--radius-m: 0;
+	--radius-l: 0;
+	--radius-xl: 0;
+}
+
+/*========
+= BUTTON =
+========*/
+
+/* Logout */
+button.mod-destructive {
+	color: var(--text-normal);
+}
+
+/*
+- Logout
+- Delete note
+*/
+button.mod-destructive:focus-visible,
+button.mod-warning:focus-visible {
+	box-shadow: 0 0 0 var(--border-width) var(--compressed-red);
+}
+
+/*=======
+= CARET =
+=======*/
+body, .theme-dark {
+	--caret-color: var(--interface-green);
+}
+
+/*=======
+= GRAPH =
+=======*/
+body, .theme-dark {
+	--graph-line: var(--hidden-grey);
+	--graph-node: var(--generic-white);
+	--graph-node-attachment: var(--multimedia-magenta);
+	--graph-node-focused: var(--interface-green);
+	--graph-node-tag: var(--symlink-cyan);
+	--graph-node-unresolved: var(--compressed-red);
+}
+
+/*======
+= MENU =
+======*/
+
+/* Drop down menu selector */
+.menu-item.tappable.selected::before {
+	content: ">";
+	color: var(--interface-green);
+	font-weight: bold;
+	position: relative;
+	left: -5px;
+	z-index: 1;
+}
+
+/*============
+= NAVIGATION =
+============*/
+
+/* Generic file title */
+.nav-file-title-content {
+	color: var(--generic-white);
+}
+
+/* Multimedia file title */
+.nav-file-tag {
+	color: var(--multimedia-magenta);
+}
+
+/* Directory title */
+.nav-folder-title-content {
+	color: var(--directory-blue);
+}
+
+/* Directory tree display */
 .nav-files-container {
-	padding: 0 5px 0 0;
+	padding-left: 0 0 0 5px;
 }
 
-/* Title container size */
-div.tree-item-self:not(.is-clickable).nav-folder-title {
-	height: 5px;
+.tree-item-self.mod-collapsible,
+.tree-item-self.nav-file-title {
+	padding: unset;
 }
 
-/* Navigation selector */
-body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
-	box-shadow: 0 0 0 1px var(--green-150);
+/* Top structure */
+.tree-item-inner.nav-folder-title-content::before {
+	content: "├─";
+	color: var(--generic-white);
 }
 
-/* File revealed in navigation */
-div.tree-item-self.is-clickable.nav-file-title.is-active.has-focus.is-flashing {
-	background-color: var(--green-150) !important;
-	color: var(--black);
+.nav-folder-title-content::after {
+	content: "/";
+	color: var(--directory-blue);
 }
 
-/*=================
-===== POPOVER =====
-=================*/
-.popover.hover-popover {
-	border: 1px solid var(--green-150);
-	border-radius: 0%;
+.tree-item.nav-file > div::before {
+	content: "├─";
+	color: var(--generic-white);
 }
 
-/*================
-===== PROMPT =====
-================*/
-body {
-	--prompt-border-color: var(--green-150);
+.tree-item.nav-file:last-child > div::before {
+	content: "└─";
+	color: var(--generic-white);
 }
 
-body {
+/*=======
+= NOTES =
+=======*/
+
+/* Active title */
+.workspace-leaf.mod-active > .workspace-leaf-content > .view-header > div > .view-header-title {
+	color: var(--interface-green);
+}
+
+/*========
+= PROMPT =
+========*/
+body, .theme-dark {
+	--prompt-border-color: var(--interface-green);
 	--prompt-width: 99.5%;
 	--prompt-max-width: 99.5%;
 	--prompt-height: 100%;
@@ -268,136 +218,120 @@ body {
 	left: 5px;
 }
 
-input.prompt-input,
-input.prompt-input:hover,
-input.prompt-input:focus,
-input.prompt-input:focus-visible {
+input.prompt-input, input.prompt-input:hover, input.prompt-input:focus, input.prompt-input:focus-visible {
 	color: var(--green-150);
-	border-bottom: 1px solid var(--green-150);
+	border-bottom: var(--border-width) solid var(--interface-green);
 }
 
+/* Make the placeholder have the same colour as the background */
 input.prompt-input::placeholder {
-	color: var(--black);
+	color: var(--background-primary);
 }
 
-/* $ in front of the command palette input */
+/* Place a "$" in front of the command palette input */
 .prompt:has(div > input[placeholder="Select a command..."])::before {
 	content: "$";
-	color: var(--green-150);
+	color: var(--interface-green);
 	position: absolute;
 	top: 15px;
-	left: 15px;
+	left: 12px;
+	z-index: 1;
 }
 
-/* / in front of the quick switcher input */
+/* Place a "/" in front of the quick switcher input */
 .prompt:has(div > input[placeholder="Find or create a note..."])::before {
 	content: "/";
-	color: var(--green-150);
+	color: var(--interface-green);
 	position: absolute;
 	top: 15px;
 	left: 15px;
+	z-index: 1;
 }
 
-/* Prompt result suggestion */
-div.suggestion-title {
-	color: var(--green-150);
+/* Place a ">" in front of the selected suggestion */
+.suggestion-item.is-selected::before {
+	content: ">";
+	color: var(--interface-green);
+	font-weight: bold;
+	position: relative;
+	left: -5px;
+	z-index: 1;
 }
 
+/* Prompt result suggestion highlight */
 span.suggestion-highlight {
-	color: var(--green-150);
+	color: var(--interface-green);
 }
 
-/*=================
-===== SLIDERS =====
-=================*/
-body {
-	--slider-thumb-border-color: var(--green-150);
-	--slider-thumb-height: 17px;
-	--slider-thumb-width: 17px;
-	--slider-thumb-radius: 0%;
+/*=========
+= SIDEBAR =
+=========*/
 
-	--slider-track-background: var(--green-150);
-	--slider-track-height: 1px;
+/* Tag pane padding */
+.tag-container.node-insert-event {
+	padding: unset;
 }
 
-input[type="range"]::-webkit-slider-thumb {
-	background-color: var(--black);
-	border: var(--one-px-solid-green-150-border);
-	align-items: center;
+.tag-container.node-insert-event > div > .tree-item > .tree-item-self.tag-pane-tag.tree-item-self {
+	padding: 5px 10px 0 10px;
 }
 
-input[type="range"]::-webkit-slider-thumb:hover {
-	background-color: var(--green-150);
-	border: none;
-}
+/*======================================================================================
+= HIDDEN COMPONENTS ====================================================================
+======================================================================================*/
 
-/*================
-===== TOGGLE =====
-================*/
-body {
-	--toggle-radius: 0%;
-
-	--toggle-thumb-color: var(--green-150);
-	--toggle-thumb-radius: 0%;
-}
-
-div.checkbox-container {
-	background-color: var(--black);
-	border: var(--one-px-solid-green-150-border);
-
-	/* Exact size for toggle button to be 1px from border */
-	height: 24px;
-	width: 42px;
-}
-
-div.checkbox-container.is-enabled {
-	background-color: var(--black);
-}
-
-/*================
-===== HIDDEN =====
-================*/
 /* Backlink status bar */
-div.status-bar,
-
-/* Canvas popup menu color setter button */
-div.canvas-menu > button.clickable-icon:nth-child(2),
-
-/* Directory tree buttons */
-div.nav-header,
-
-/* Directory tree vault title */
-div.tree-item.nav-folder.mod-root > div.tree-item-self.nav-folder-title > div.tree-item-inner.nav-folder-title-content,
+.status-bar,
 
 /* Graph control buttonss */
-div.graph-controls,
-div.clickable-icon.graph-controls-button.mod-open,
-div.clickable-icon.graph-controls-button.mod-animate,
+.graph-controls, .clickable-icon.graph-controls-button.mod-open, .clickable-icon.graph-controls-button.mod-animate,
+
+/* Menu item icons */
+.menu-item-icon:not(.mod-submenu),
+
+/* Metadata "Properties" */
+.metadata-properties-heading,
+
+/* Metadata property icons */
+.metadata-property-icon, .multi-select-pill-remove-button, .text-icon-button .text-button-icon,
 
 /* Modal close button */
-div.modal-close-button,
+.modal-close-button,
+
+/* Navigation buttons */
+.nav-header,
+
+/* Navigation collapse SVG icon indicator */
+.tree-item-icon.collapse-icon.nav-folder-collapse-indicator,
+
+/* Note view buttons */
+.view-actions, a.clickable-icon.view-action, .view-header-title-container.mod-at-start.mod-fade::after,
 
 /* Previous & next buttons */
-div.view-header-nav-buttons,
+.view-header-nav-buttons,
 
-/* Prompt instruction */
+/* Prompt instructions */
 .prompt-instructions,
 
 /* Ribbon */
-div.workspace-ribbon,
+.workspace-ribbon,
 
-/* Scrollbar */
+/* Scrollbars */
 ::-webkit-scrollbar,
 
+/* Search icons*/
+.input-right-decorator.clickable-icon, .more-options-icon, .search-input-clear-button, .search-input-container:before, .search-row .clickable-icon, .search-results-info .dropdown,
+
+/* Settings outgoing help links */
+.modal-container.mod-dim > .modal.mod-settings.mod-sidebar-layout > .modal-content.vertical-tabs-container > .vertical-tab-content-container > div > div > .setting-item-info > .setting-item-description > a,
+
 /* Tab Headers */
-div.workspace-tab-header-container,
+.workspace-tab-header-container,
 
 /* Titlebar */
-div.titlebar-inner,
+.titlebar-inner,
 
-/* View action buttons */
-div.view-actions,
-a.clickable-icon.view-action,
-div.view-header-title-container.mod-at-start.mod-fade::after {
+/* Vault manager */
+.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > .workspace-sidedock-vault-profile {
 	display:none;
 }

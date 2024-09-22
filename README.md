@@ -4,11 +4,18 @@ A work in progress CSS snippet that aims to mix the Nano text editor and the Lin
 ![Example](https://github.com/DarkKooky/obsidian-styling/blob/main/img/Example.png)
 
 # How To Use
+
+### Snippet
 - In Obsidian, open the `Settings > Appearance > CSS snippets`
 - Click 🗁 to open the vault's snippets directory `.obsidian/snippets/`
 - Place the [theme.css](https://github.com/DarkKooky/obsidian-styling/blob/main/theme.css) into the opened directory
 - Back in Obsidian, click ⭮ to reload snippets
-- The theme should appear in the list and can be enabled
+- Enable it
+
+### Icon
+- In Obsidian, open the `Settings > Appearance > Custom app icon`
+- Click `Choose`
+- Select [obsidian.ico](https://github.com/DarkKooky/obsidian-styling/blob/main/img/obsidian.png)
 
 # Specifics
 
