@@ -1,4 +1,4 @@
-A work in progress CSS snippet that aims to mix the Nano text editor and the Linux terminal. It is intended to be minimalistic and exclusive to dark mode: for gremlins and other basement dwellers.
+A work in progress CSS snippet that takes from the Linux terminal. It is intended to be minimalistic and exclusive to dark mode: for gremlins and other basement dwellers.
 
 # Current Visualisation
 ![Example](https://github.com/DarkKooky/obsidian-styling/blob/main/img/Example.png)
@@ -23,8 +23,8 @@ A work in progress CSS snippet that aims to mix the Nano text editor and the Lin
 The font styling was left untouched in order for users to select what best suits them but I do recommend using a monospace font, such as Fira Code.
 
 ### Keyboard-Only
-This theme has been optimised for hotkey-use only and thus the Quick Switcher
+This theme has been optimised for hotkey-use only and thus the [Quick Switcher](https://help.obsidian.md/Plugins/Quick+switcher)
 ![Example](https://github.com/DarkKooky/obsidian-styling/blob/main/img/Example%20Quick%20Switcher.png)
 
-and the Command Palette have been tweaked:
+and the [Command Palette](https://help.obsidian.md/Plugins/Command+palette) have been tweaked:
 ![Example](https://github.com/DarkKooky/obsidian-styling/blob/main/img/Example%20Command%20Palette.png)
